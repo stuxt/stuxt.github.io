@@ -1,2 +1,2 @@
 # stuxt.github.io
-My bolg site!
+My blog site!
