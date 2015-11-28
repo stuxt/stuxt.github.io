@@ -1,8 +1,11 @@
 @charset "utf-8";
 
 /*index page style*/
-.index-page .bar{
+.index-page .app-logo{
 	height: 8rem;
+}
+.index-page .app-logo .col-33{
+	text-align: center;
 }
 
 /*for page style*/
@@ -11,13 +14,13 @@
 }
 
 .for-page .facebook-card .loading_data{
-	height: 12px;
+	height: .6rem;
 	width: 100%;
 	background-color: #eee;
 }
 .for-page .facebook-card .loading_data .complete{
-	height: 12px;
-	line-height: 12px;
+	height: .6rem;
+	line-height: .6rem;
 	width: 50%;
 	float: left;
 	background-color: #F60;
