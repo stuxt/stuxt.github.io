@@ -63,13 +63,16 @@
 .for-page .facebook-card h4{
 	margin: .3rem auto;
 }
-/*.for-page .card .content-block{
-	width: 100%;
-	padding: 0;
-}*/
+
 .for-page .facebook-card .button-warning.button-fill {
     color: #fff;
 }
 
 
 /*for-detail-page style*/
+..button{
+	height: 2.5rem;
+}
+.for-detail-page .facebook-card .button.button-fill  {
+    line-height: 2.5rem;
+}
