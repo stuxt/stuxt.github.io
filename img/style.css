@@ -7,6 +7,9 @@
 .index-page .app-logo .col-33{
 	text-align: center;
 }
+.index-page .app-logo .col-33 img{
+	width: 100%;
+}
 
 /*for page style*/
 .for-page .facebook-card .facebook-avatar {
