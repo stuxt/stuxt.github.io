@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 /*index page style*/
-
+.index-page .bar{
+	height: 8rem;
+}
 
 /*for page style*/
 .for-page .facebook-card .facebook-avatar {
