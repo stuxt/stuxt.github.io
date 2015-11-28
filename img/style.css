@@ -3,6 +3,7 @@
 /*index page style*/
 .index-page .app-logo{
 	height: 8rem;
+	background-color: #F60;
 }
 .index-page .app-logo .col-33{
 	text-align: center;
