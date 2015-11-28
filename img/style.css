@@ -16,7 +16,7 @@
 /*index page style*/
 .index-page .app-logo{
 	height: 15rem;
-	background-image: url(img/topbg.webp);
+	background-image: url(topbg.webp);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -24,8 +24,8 @@
 	color: #F60;
 	font-family: "microsoft yahei";
 	font-weight: bold;
-	border:1px solid #ddd;
-	font-size: 3rem;
+	border-bottom:1px solid #ddd;
+	font-size: 1.5rem;
 }
 .index-page .app-logo img{
 	width: 40%;
