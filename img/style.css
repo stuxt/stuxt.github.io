@@ -21,7 +21,7 @@
 	-webkit-background-size: cover;
 	background-size: cover;
 	text-align: center;
-	color: #F60;
+	color: #FFF;
 	font-family: "microsoft yahei";
 	font-weight: bold;
 	border-bottom:1px solid #ddd;
@@ -29,7 +29,10 @@
 }
 .index-page .app-logo img{
 	width: 40%;
-	margin-top: 1rem;
+	margin-top: 2rem;
+}
+.index-page .app-logo p{
+	margin:0;
 }
 
 
