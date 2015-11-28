@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.facebook-card .facebook-avatar {
+    font-size: .65rem;
+}
+
+.facebook-card .loading_data{
+	height: 12px;
+	width: 100%;
+	background-color: #eee;
+}
+.facebook-card .loading_data .complete{
+	height: 12px;
+	line-height: 12px;
+	width: 50%;
+	float: left;
+	background-color: #f00;
+}
