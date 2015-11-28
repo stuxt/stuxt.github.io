@@ -1,29 +1,39 @@
 @charset "utf-8";
 
+
+.card .content-block{
+	width: 100%;
+	padding: 0;
+}
+.button{
+	height: 2rem;
+}
+ .button-warning.button-fill {
+    color: #fff;
+    line-height: 2rem;
+}
+
 /*index page style*/
 .index-page .app-logo{
-	height: 10rem;
+	height: 15rem;
 	background-color: #FFF;
 	text-align: center;
 	color: #F60;
 	font-family: "microsoft yahei";
 	font-weight: bold;
+	border:1px solid #ddd;
 }
-
 .index-page .app-logo img{
 	width: 40%;
 	margin-top: 1rem;
 }
 
-.index-page .card .content-block{
-	width: 100%;
-}
+
 
 /*for page style*/
 .for-page .facebook-card .facebook-avatar {
     font-size: .65rem;
 }
-
 .for-page .facebook-card .loading_data{
 	height: .6rem;
 	width: 100%;
@@ -41,9 +51,10 @@
 .for-page .facebook-card h4{
 	margin: .3rem auto;
 }
-.for-page .card .content-block{
+/*.for-page .card .content-block{
 	width: 100%;
-}
+	padding: 0;
+}*/
 .for-page .facebook-card .button-warning.button-fill {
     color: #fff;
 }
