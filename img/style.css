@@ -39,10 +39,6 @@
 	margin:0;
 }
 
-.mt-1{
-	margin-top: -1rem;
-}
-
 /*for page style*/
 .for-page .facebook-card .facebook-avatar {
     font-size: .65rem;
@@ -71,3 +67,6 @@
 .for-page .facebook-card .button-warning.button-fill {
     color: #fff;
 }
+
+
+/*for-detail-page style*/
