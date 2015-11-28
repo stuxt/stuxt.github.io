@@ -12,6 +12,10 @@
     color: #fff;
     line-height: 2rem;
 }
+.facebook-card .button-success.button-fill {
+    color: #fff;
+    line-height: 2rem;
+}
 
 /*index page style*/
 .index-page .app-logo{
