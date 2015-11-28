@@ -5,11 +5,14 @@
 	height: 10rem;
 	background-color: #FFF;
 	text-align: center;
-	color: #fff;
+	color: #F60;
+	font-family: "microsoft yahei";
+	font-weight: bold;
 }
 
 .index-page .app-logo img{
 	width: 40%;
+	margin-top: 1rem;
 }
 
 /*for page style*/
