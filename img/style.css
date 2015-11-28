@@ -1,15 +1,19 @@
 @charset "utf-8";
 
-.facebook-card .facebook-avatar {
+/*index page style*/
+
+
+/*for page style*/
+.for-page .facebook-card .facebook-avatar {
     font-size: .65rem;
 }
 
-.facebook-card .loading_data{
+.for-page .facebook-card .loading_data{
 	height: 12px;
 	width: 100%;
 	background-color: #eee;
 }
-.facebook-card .loading_data .complete{
+.for-page .facebook-card .loading_data .complete{
 	height: 12px;
 	line-height: 12px;
 	width: 50%;
@@ -18,12 +22,12 @@
 	color: #fff;
 	text-align: right;
 }
-.facebook-card h4{
+.for-page .facebook-card h4{
 	margin: .3rem auto;
 }
-.card .content-block{
+.for-page .card .content-block{
 	width: 100%;
 }
-.facebook-card .button-warning.button-fill {
+.for-page .facebook-card .button-warning.button-fill {
     color: #fff;
 }
