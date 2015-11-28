@@ -14,6 +14,16 @@
 	line-height: 12px;
 	width: 50%;
 	float: left;
-	background-color: #f00;
+	background-color: #F60;
+	color: #fff;
 	text-align: right;
+}
+.facebook-card h4{
+	margin: .3rem auto;
+}
+.card .content-block{
+	width: 100%;
+}
+.facebook-card .button-warning.button-fill {
+    color: #fff;
 }
