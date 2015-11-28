@@ -17,6 +17,23 @@
     line-height: 2rem;
 }
 
+/*进度条style start*/
+.facebook-card .loading_data{
+	height: .6rem;
+	width: 100%;
+	background-color: #eee;
+}
+.facebook-card .loading_data .complete{
+	height: .6rem;
+	line-height: .6rem;
+	width: 50%;
+	float: left;
+	background-color: #F60;
+	color: #fff;
+	text-align: right;
+}
+/*进度条style end*/
+
 /*index page style*/
 .index-page .app-logo{
 	height: 15rem;
@@ -42,20 +59,6 @@
 /*for page style*/
 .for-page .facebook-card .facebook-avatar {
     font-size: .65rem;
-}
-.for-page .facebook-card .loading_data{
-	height: .6rem;
-	width: 100%;
-	background-color: #eee;
-}
-.for-page .facebook-card .loading_data .complete{
-	height: .6rem;
-	line-height: .6rem;
-	width: 50%;
-	float: left;
-	background-color: #F60;
-	color: #fff;
-	text-align: right;
 }
 .for-page .facebook-card h4{
 	margin: .3rem auto;
