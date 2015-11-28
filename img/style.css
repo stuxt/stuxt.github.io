@@ -15,6 +15,10 @@
 	margin-top: 1rem;
 }
 
+.index-page .card .content-block{
+	width: 100%;
+}
+
 /*for page style*/
 .for-page .facebook-card .facebook-avatar {
     font-size: .65rem;
