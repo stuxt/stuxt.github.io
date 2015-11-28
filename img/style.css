@@ -4,11 +4,11 @@
 .index-page .app-logo{
 	height: 8rem;
 	background-color: #F60;
-}
-.index-page .app-logo .col-33{
 	text-align: center;
+	color: #fff;
 }
-.index-page .app-logo .col-33 img{
+
+.index-page .app-logo img{
 	width: 100%;
 }
 
