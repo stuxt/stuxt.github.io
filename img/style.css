@@ -72,6 +72,7 @@
 /*for-detail-page style*/
 .for-detail-page .button{
 	height: 2.5rem;
+	border-radius: none;
 }
 .for-detail-page .facebook-card .button.button-fill  {
     line-height: 2.5rem;
