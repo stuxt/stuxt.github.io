@@ -1,0 +1,39 @@
+@charset"utf-8";
+
+/*css reset*/
+html{ font-size: 100px;}
+body, ul, ol, p, h1, h2, h3, h4, h5, h6, dl, dt, dd ,form ,textarea ,input{margin:0; padding: 0;}
+ul,ol{list-style:none;}
+ul,ol,input{padding:0;}
+a img{border:0;}
+img,object,audio,vedio{
+	max-width: 100%;
+}
+a{ text-decoration:none; color:#333;}
+a:visited{color:#333;}
+.clear{ clear:both;}
+
+body{
+	font-family:"microsoft yahei";
+	color: #fff;
+}
+
+.warp{ background-color: #DF5D45; text-align: center;}
+
+.cityname{ font-size: .2rem; height: .2rem; padding: .1rem 0; border-bottom: 1px #FD8B76 solid;}
+.dtime{ font-size: .12rem; padding: .1rem 0 .2rem 0; color: #FFB4A6;}
+.temp_info{ font-size: .32rem; padding: .5rem 0 .6rem 0;}
+.air_wind{ font-size: .16rem; padding-bottom: .3rem; border-bottom: 1px solid #FD8B76;}
+.air_wind p{ line-height: .3rem;}
+.air_wind .air_q{ margin: .3rem auto 0; border-top: 1px solid #FD8B76; padding-top: .3rem;}
+.wet_data{ margin-left: .15rem;}
+
+.life_info{ padding: .2rem 0; font-size: .16rem;}
+
+.ltitle{ font-size: .18rem; padding: 0 0 .2rem;}
+.life_info ul{overflow: hidden; border-top: 1px #FD8B76 solid;}
+.life_info li{ width: 50%; padding: .2rem 0; text-align: center; border-bottom:1px #FD8B76 solid; border-right:1px #FD8B76 solid; margin-top: -1px; float: left;box-sizing: border-box;}
+.life_info li:nth-child(2n){ border-right: none;}
+.life_info li img{ max-width: .4rem; margin-bottom: .1rem;}
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>移动天气</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+	<link rel="stylesheet" href="images/style.css" type="text/css"/>
+</head>
+<body>
+<div class="warp">
+	<div class="cityname"><!-- 南京 --></div>
+	<div class="dtime">
+		<span class="updatetime"><!-- 2015-12-30 --></span> 星期<span class="week"><!-- 三 --></span>
+	</div>
+	<div class="weather_info">
+		<div class="temp_info">
+			<p><span class="curTemp"><!-- 10 --></span>℃</p>
+			<p><span class="wType"><!-- 晴 --></span></p>
+		</div>
+		<div class="air_wind">
+			<p>
+				<span class="fengxiang"><!-- 西风 --></span><span class="fengli"><!-- 2级 --></span>
+				<span class="wet_data">湿度:<span class="humidity"><!-- 56 --></span>%</span>
+			</p>
+			<p class="air_q">空气质量:<span class="quality"><!-- 轻度污染 --></span></p>
+			<p>PM2.5:<span class="pm25"><!-- 103 --></span></p>
+		</div>
+		<div class="life_info">
+			<div class="ltitle">生活指数</div>
+			<ul>
+				<li>
+					<img src="images/iconfont-chuanyizhishu.png" />
+					<p><span class="coat_data"><!-- 较冷 --></span></p>
+				</li>
+				<li>
+					<img src="images/iconfont-xiche.png" />
+					<p><span class="car_data"><!-- 适宜 --></span>洗车</p>
+				</li>
+				<li>
+					<img src="images/iconfont-kouzhao1.png" />
+					<p><span class="cold_data"><!-- 易发 --></span>感冒</p>
+				</li>
+				<li>
+					<img src="images/iconfont-yundong.png" />
+					<p><span class="sport_data"><!-- 适宜 --></span>运动</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script src="images/jquery-1.8.3.min.js"></script>
+<script src="images/weather.js"></script>
+</body>
+</html>
