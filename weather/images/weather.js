@@ -1,6 +1,4 @@
 
-
-
 $(function getCityInfo(){
 	var cityName ="南京";//用户选择的城市名称
 
@@ -103,3 +101,9 @@ $(function getCityInfo(){
         }
     });
 });
+
+function myrefresh() 
+{ 
+       window.location.reload(); 
+} 
+setTimeout('myrefresh()',600000); //指定1秒刷新一次
