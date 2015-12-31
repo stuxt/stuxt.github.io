@@ -1,6 +1,15 @@
+var cityName;//用户选择的城市名称
+var i=0;
 
-$(function getCityInfo(){
-	var cityName ="南京";//用户选择的城市名称
+$(function(){
+	getCityInfo();
+
+	setInterval(function(){getCityInfo();},60000); //指定1分钟刷新一次60000
+
+	function getCityInfo(){
+	cityName ="南京";//用户选择的城市名称
+	
+	//console.log("i:"+(i+1));
 
     $.ajax({
         type: "GET",
@@ -100,10 +109,8 @@ $(function getCityInfo(){
         	alert("请求出错了！"+type);
         }
     });
+	};
+
+	
 });
 
-function myrefresh() 
-{ 
-       window.location.reload(); 
-} 
-setTimeout('myrefresh()',600000); //指定1秒刷新一次
