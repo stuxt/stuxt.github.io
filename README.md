@@ -9,7 +9,7 @@ My blog site!
 * 衣路温暖的路径是**root**/cfw/index.html
 * 南京天气 的路径为：**root**/weather/weather.html
 
->[**root**](blog.isbox.me)为：[blog.isbox.me](blog.isbox.me)
+>[**root**](http://blog.isbox.me)为：[blog.isbox.me](http://blog.isbox.me)
 
 
 #V1.3 DONE
