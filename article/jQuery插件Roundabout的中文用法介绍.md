@@ -240,3 +240,4 @@ Roundabout现在能做的不仅仅是转盘了，`Roundabout Shapes`插件提供
 >
 >V2.4.2 下载地址：[下载](http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2014/9/19/a832f51287a546e8b20ff3bf53b435ed/js/jquery.roundabout.js)
 >
+>V1.1  下载地址：[下载](http://demo.niutuku.com/js/20/3/jQuery-Roundabout_files/jquery.roundabout.js)
