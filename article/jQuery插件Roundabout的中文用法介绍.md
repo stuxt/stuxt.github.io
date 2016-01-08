@@ -10,6 +10,7 @@ Roundabout是一个jQuery插件，它可以把静态结构的HTML元素变成一
 Roundabout是在BSD许可下发布的。如果你不知道BSD什么意思的话，你可以在源代码中找到全部许可证。赶快行动吧！
 
 3月13日更新，对于Roundabout V1.1版本更新的介绍：
+
 1. 现在所有的元素值都存储在jQuery的数据方法中，并不再被添加为属性。
 2. 增加了一个新的属性```reflect```，这个属性可让元素在相反方向上移动。
 3. 修复了一个由于`roundabout_animateToNextChild` 和`roundabout_animateToPreviousChild`导致的在某些时候不能移动的问题。
