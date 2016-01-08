@@ -6,7 +6,7 @@ My blog site!
 >新增了article分类
 >并添加了第一篇文章
 
-* [[译]jQuery插件Roundabout的中文用法介绍](http://stuxt.github.io/article/jQuery插件Roundabout的中文用法介绍.md)
+* [[译]jQuery插件Roundabout的中文用法介绍](https://github.com/stuxt/stuxt.github.io/blob/master/article/jQuery%E6%8F%92%E4%BB%B6Roundabout%E7%9A%84%E4%B8%AD%E6%96%87%E7%94%A8%E6%B3%95%E4%BB%8B%E7%BB%8D.md)
 
 #V2.0
 2016-01-05
