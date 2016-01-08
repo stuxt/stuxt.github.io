@@ -2,7 +2,7 @@
 
 > 时间:2016-01-08     作者:Fred LeBlanc       翻译:小天同学
 
-###一. 移动元素
+### 一. 移动元素
 Roundabout是一个jQuery插件，它可以把静态结构的HTML元素变成一个可以高度可定制的交互圆形区域，然后静态元素会实现360循环播放的效果。 （现在，不仅可以是圆形还可以是很多种形状这样的效果！）
 
 经过简单的配置之后，Roundabout就可以作用在有序列表ol和无需列表ul上；而且经过一些快速配置之后，还能使嵌套元素产生效果。
@@ -18,12 +18,35 @@ Roundabout是在BSD许可下发布的。如果你不知道BSD什么意思的话�
 我已经尽我最大的努力检查本版本中的错误，但如果你发现了错误，请尽快的告诉吴！我会修复更新。
 
 
-###二. 要求和附加组件
+### 二. 要求和附加组件
 Roundabout需要依赖jQuery 1.2.3+，1.3.x或1.4.x以上的版本。并且搭配以下的插件效果会更好：
 * [Roundabout Shapes](http://fredhq.com/) by Fred LeBlanc
 * [jQuery Easing](http://gsgd.co.uk/sandbox/jquery/easing/)by George McGinley Smith
 
 
+### 三. 令人兴奋的演示
+> [原文链接](http://demo.niutuku.com/js/20/3/)都是基于web的用法，且大多demo都已失效。
+这里给出另外的两个演示地址：
+* <http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2014/9/19/a832f51287a546e8b20ff3bf53b435ed/>
+* <http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201311/jiaoben1663/>
 
 
-[原文链接](http://demo.niutuku.com/js/20/3/)
+### 四. 如何快速使用Roundabout
+这三个步骤将指导你把一个无聊的无序列表变成一个令人兴奋的回旋特效！一旦本教程完成后，你就可以自定义你自己的回旋特效了。
+
+本指南假设在你的html文件的某处有一个像下面这样的无序列表：
+```
+<ul id="myRoundabout">
+   <li>Box 1</li>
+   <li>Box 2</li>
+   <li>Box 3</li>
+   <li>Box 4</li>
+</ul>
+```
+
+
+
+
+
+
+>[原文链接](http://demo.niutuku.com/js/20/3/)
