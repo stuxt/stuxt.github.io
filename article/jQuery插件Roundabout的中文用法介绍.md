@@ -206,9 +206,9 @@ Roundabout需要依赖jQuery 1.2.3+，1.3.x或1.4.x以上的版本。并且搭�
 这个实施是很简单的。
 
 首先，要在页面中引入插件文件，如下：
-`
+```
 <script type="text/javascript" src="jquery.easing.1.3.js"></script>
-`
+```
 然后，在你的Roundabout中配置插件的参数，如下：
 ```
 <script type="text/javascript">
@@ -232,3 +232,11 @@ Roundabout现在能做的不仅仅是转盘了，`Roundabout Shapes`插件提供
 参考链接原文
 
 >[原文链接](http://demo.niutuku.com/js/20/3/)
+
+
+
+
+>######源代码下载地址：
+>
+>V2.4.2 下载地址：[下载](http://view.jqueryfuns.com/%E9%A2%84%E8%A7%88-/2014/9/19/a832f51287a546e8b20ff3bf53b435ed/js/jquery.roundabout.js)
+>
