@@ -36,7 +36,7 @@ Roundabout需要依赖jQuery 1.2.3+，1.3.x或1.4.x以上的版本。并且搭�
 这三个步骤将指导你把一个无聊的无序列表变成一个令人兴奋的回旋特效！一旦本教程完成后，你就可以自定义你自己的回旋特效了。
 
 本指南假设在你的html文件的某处有一个像下面这样的无序列表：
-```[HTML]
+```HTML
 <ul id="myRoundabout">
    <li>Box 1</li>
    <li>Box 2</li>
@@ -54,7 +54,7 @@ Roundabout需要依赖jQuery 1.2.3+，1.3.x或1.4.x以上的版本。并且搭�
 
 ##### 第二步：设置CSS
 由于无序列表在大多数浏览器下默认会有样式的缩进，所以我们需要自定义CSS来改变无序列表的样式，防止在我们使用回旋插件时没有得到理想的效果，下面的CSS示例可以帮助我们建立一个标准的Roundabout：
-```[CSS]
+```CSS
 <style type="text/css">
    .roundabout-holder { padding: 0; height: 5em; }
    .roundabout-moveable-item { 
@@ -70,7 +70,7 @@ Roundabout需要依赖jQuery 1.2.3+，1.3.x或1.4.x以上的版本。并且搭�
 
 ##### 第三步：引入Roundabout 的JS文件
 可以单独写在一个脚本文件中，也可以放在使用Roundabout的页面中，这里我们放在页面的正确位置上，如下：
-```[javascript]
+```javascript
 <script type="text/javascript">
    $(document).ready(function() {
       $('ul#myRoundabout').roundabout();
@@ -105,7 +105,7 @@ Roundabout需要依赖jQuery 1.2.3+，1.3.x或1.4.x以上的版本。并且搭�
 默认情况下，你的Roundabout效果将在第一个可移动的焦点元素上开始，但是这并不是必须的。通过改变设置`startingChild`配置参数你可以从任何一个可移动的焦点元素上开始。
 
 举个例子，继续我们上面的3个步骤的例子，如果我们想让Roundabout从第三个包含`“Box3”`的`li`开始，我们可以这样配置：
-```[javascript]
+```javascript
 <script type="text/javascript">
    $(document).ready(function() {
       $('ul').roundabout({
@@ -117,7 +117,7 @@ Roundabout需要依赖jQuery 1.2.3+，1.3.x或1.4.x以上的版本。并且搭�
 
 #####速度的控制（加速、减速）
 如果你认为你的动画效果不是你认为的最佳速度，你可以使用`duration`属性容易的增加速度或者降低速度。配置如下：
-```
+```javascript
 <script type="text/javascript">
    $(document).ready(function() {
       $('div.moveMe').roundabout({
@@ -129,7 +129,7 @@ Roundabout需要依赖jQuery 1.2.3+，1.3.x或1.4.x以上的版本。并且搭�
 
 #####不透明度和比例大小
 为了让你的效果更加的理想，你可以设置`minimum`和`maximum`的值来控制你的可移动元素的不透明度和比例大小。配置示例如下：
-```
+```javascript
 <script type="text/javascript">
    $(document).ready(function() {
       $('ul').roundabout({
@@ -145,12 +145,12 @@ Roundabout需要依赖jQuery 1.2.3+，1.3.x或1.4.x以上的版本。并且搭�
 有两个可设置的选项，让你轻松触发动画到下一个元素和返回前一个元素。用`btnNext`参数去关联任何的元素的点击事件，使得触发没有在焦点状态的可移动元素执行下一个。用`btnPrev`这个参数可以做同样的事情在另外相反的方向上。
 
 继续上面的3步例子，在无序列表中增加两个链接，如下：
-```
+```HTML
 <a href="#" id="next">Next!</a>
 <a href="#" id="previous">Previous!</a>
 ```
 现在设置`btnNext`和`btnPrev`两个参数去关联你的链接到Roundabout效果中。你可以选择任何你喜欢的选择器名字，因为这个是直接传值到在jQuery内部的，如下：
-```
+```javascript
 <script type="text/javascript">
    $(document).ready(function() {
       $('ul').roundabout({
@@ -164,7 +164,7 @@ Roundabout需要依赖jQuery 1.2.3+，1.3.x或1.4.x以上的版本。并且搭�
 
 #####不让用户点击
 默认情况下，点击不是焦点状态下的元素时，会使得它出发动画运动到焦点状态展示，但是这个可以关闭，如果你不想这样点击的话，如下：
-```
+```javascript
 <script type="text/javascript">
    $(document).ready(function() {
       $('ul').roundabout({
@@ -177,7 +177,7 @@ Roundabout需要依赖jQuery 1.2.3+，1.3.x或1.4.x以上的版本。并且搭�
 
 #####“焦点”是相对的
 尽管默认值设置为展示最接近你的元素，但是你仍然可以设置参数`focusbearing`为任何角度。试着配置这个参数，看下这个点在哪。配置如下：
-```
+```javascript
 <script type="text/javascript">
    $(document).ready(function() {
       $('ul').roundabout({
@@ -189,7 +189,7 @@ Roundabout需要依赖jQuery 1.2.3+，1.3.x或1.4.x以上的版本。并且搭�
 
 #####不只是适用于列表
 使用`ul`和`ol`是默认设置，你也可以使用此效果在任何结构的`html`结构上。只需要这样做，用jQuery选择器选择任何你希望的元素关联`.roundabout();`，（比如一个带有`class=”moveMe”`的div）。告诉Roundabout那一个子集合是你希望移动的，用`childSelector`参数在jQuery中直接配置一段String类型的选择器。这个选择可以选择所有你希望移动的元素。如下：
-```
+```javascript
 <script type="text/javascript">
    $(document).ready(function() {
       $('div.moveMe').roundabout({
@@ -206,11 +206,11 @@ Roundabout需要依赖jQuery 1.2.3+，1.3.x或1.4.x以上的版本。并且搭�
 这个实施是很简单的。
 
 首先，要在页面中引入插件文件，如下：
-```
+```HTML
 <script type="text/javascript" src="jquery.easing.1.3.js"></script>
 ```
 然后，在你的Roundabout中配置插件的参数，如下：
-```
+```javascript
 <script type="text/javascript">
    $(document).ready(function() {
       $('ul').roundabout({
