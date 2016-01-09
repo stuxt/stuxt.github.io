@@ -56,7 +56,7 @@ $(function(){
 		        	week="五";
 		        }else if (week=="6") {
 		        	week="六";
-		        }else if (week=="7") {
+		        }else if (week=="0") {
 		        	week="日";
 		        };
 		        $(".week").html(week);
