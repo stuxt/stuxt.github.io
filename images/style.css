@@ -33,7 +33,7 @@ background-size: .8rem; border:#fff 3px solid; margin: .3rem auto; }
 .welcome{ width: 2.8rem; line-height: .36rem; border-bottom:1px solid #fff; margin: .3rem auto; font-size: .2rem;}
 
 .info{ width: 96%; line-height: .36rem; font-size: .16rem; margin: .1rem auto;}
-.sns{ border:1px solid rgba(255, 255, 255, 0.66); width: 2.8rem; margin: .2rem auto; padding: .15rem 0; 
+.sns{ border:1px solid rgba(255, 255, 255, 0.66); width: 2.8rem; margin: .4rem auto; padding: .15rem 0; 
 	background-color: rgba(5,5,5,.6); font-size: .2rem;}
 .sns a{ padding: 0px .15rem;}
 .sns a:hover{ color: rgb(251, 150, 3);}
