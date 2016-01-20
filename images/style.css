@@ -12,14 +12,14 @@ a{ color: #fff; text-decoration: none;}
 html{ font-size: 100px;}
 
 body{ width: 100%; height: 100%; font-family: "microsoft yahei"; 
-	background-image: url(bg.webp); 
+	background-image: url(bg_01.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /*-webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;*/
-    background-size: 100% 100%;
-    background-position: 50% 50%;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center top;
 
 }
 .bg_opaticy{ width: 100%; height: 100%; position: absolute; top: 0; background-color:rgba(0,0,0,.4); z-index: 1; }
