@@ -3,8 +3,11 @@ My blog site!
 
 #V2.2
 2016-01-20
+> 修改blog index 页面适配移动端
+>
 > article分类终结，issue代替作为blog post list
->并添加了一篇文章
+>
+> 并添加了一篇文章
 
 #V2.1
 2016-01-08
