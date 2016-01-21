@@ -15,13 +15,24 @@ body{ width: 100%; height: 100%; font-family: "microsoft yahei";
 	background-image: url(bg.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     background-position: center top;
-
 }
+
+@media screen and (min-width: 641px) {
+    body{
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 640px) {
+    body{
+      background-size: auto 100%;
+  }
+}
+
 .bg_opaticy{ width: 100%; height: 100%; position: absolute; top: 0; background-color:rgba(0,0,0,.4); z-index: 1; }
 .c-box{min-width: 3.2rem; width: 100%; position: absolute; z-index: 2; top:0px; text-align: center; color: #fff; font-weight: bold;
 }
