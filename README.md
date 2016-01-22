@@ -7,6 +7,15 @@ My blog site!
 * [[译]2016年提高你代码质量的四种方法](https://github.com/stuxt/stuxt.github.io/issues/4)
 * [[译]jQuery插件Roundabout的中文用法介绍](https://github.com/stuxt/stuxt.github.io/issues/3)
 
+#V2.2.1
+2016-01-22
+
+> 修改了weather webapp，此目录下的不在维护，以后将在[这里](https://github.com/stuxt/Weather)单独维护
+>
+> 新的weather地址为：[南京天气](http://stuxt.github.io/Weather/)
+> 
+
+
 #V2.2
 2016-01-20
 > 修改blog index 页面适配移动端
