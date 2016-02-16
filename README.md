@@ -3,6 +3,7 @@ My blog site!
 
 #博客文章目录
 
+* [windows 下如何用sublime更高效的编写less](https://github.com/stuxt/stuxt.github.io/issues/8)
 * [[译]Web 开发入门指南](https://github.com/stuxt/stuxt.github.io/issues/5)
 * [[译]2016年提高你代码质量的四种方法](https://github.com/stuxt/stuxt.github.io/issues/4)
 * [[译]jQuery插件Roundabout的中文用法介绍](https://github.com/stuxt/stuxt.github.io/issues/3)
