@@ -9,6 +9,9 @@ My blog site!
 * [[译]2016年提高你代码质量的四种方法](https://github.com/stuxt/stuxt.github.io/issues/4)
 * [[译]jQuery插件Roundabout的中文用法介绍](https://github.com/stuxt/stuxt.github.io/issues/3)
 
+[》更多博客文章请这里看《](https://github.com/stuxt/stuxt.github.io/issues)
+> ps:上面的博客文章目录不会更新了，请点击更多链接查看！
+
 #V2.3
 2016-01-22
 
