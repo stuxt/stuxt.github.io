@@ -1,7 +1,7 @@
 # stuxt.github.io
 My blog site!
 
-#博客文章目录
+# 博客文章目录
 
 * [初探gulp[学习笔记1]](https://github.com/stuxt/stuxt.github.io/issues/9)
 * [如何用sublime更高效的编写less](https://github.com/stuxt/stuxt.github.io/issues/8)
@@ -12,7 +12,7 @@ My blog site!
 [》更多博客文章请这里看《](https://github.com/stuxt/stuxt.github.io/issues)
 > ps:上面的博客文章目录不会更新了，请点击更多链接查看！
 
-#V2.3
+### V2.3
 2016-01-22
 
 > 修改了weather webapp，此目录下的不在维护，以后将在[这里](https://github.com/stuxt/Weather)单独维护
@@ -20,7 +20,7 @@ My blog site!
 > 新的weather地址为：[南京天气](http://stuxt.github.io/Weather/)
 
 
-#V2.2
+### V2.2
 2016-01-20
 > 修改blog index 页面适配移动端
 >
@@ -28,13 +28,13 @@ My blog site!
 >
 > 并添加了一篇文章
 
-#V2.1
+### V2.1
 2016-01-08
 >新增了article分类
 >并添加了第一篇文章
 
 
-#V2.0
+### V2.0
 2016-01-05
 >对多个项目进行了分类
 
@@ -44,9 +44,9 @@ My blog site!
 
 >[**root**](http://blog.isbox.me)为：[blog.isbox.me](http://blog.isbox.me)
 
-#V1.3 DONE
+### V1.3 DONE
  2015-12-14
 衣路温暖测试
 
-#V1.0 DONE
+### V1.0 DONE
  2015-11-27
