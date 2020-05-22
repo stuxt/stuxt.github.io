@@ -1,0 +1,115 @@
+<!doctype html>
+<!--
+Copyright 2018 Google, Inc. All Rights Reserved.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<style>
+@property --bullet-play-mode {
+    syntax: '*';
+    inherits: false;
+    initial-value: 'scroll';
+  }
+  main {
+    display: layout(bullet);
+    width: 800px;
+    height: 500px;
+    margin: 10px auto;
+    border: 1px solid #000;
+    /*--padding: 10;
+    --columns: 3;*/
+    --bullet-direction: row;  /*可选值为row和column  只对滚动弹幕有效*/ 
+  }
+  div {
+    font: 12px sans-serif;
+    display: inline-block;
+    width: fit-content;
+    margin: 5px;
+    white-space: pre;
+  }
+  div::first-letter {
+    font-size: 200%;
+  }
+  .scrolling {
+    color: black;
+    border:2px solid rgba(71, 4, 10, 1);
+    --bullet-play-mode:scroll; /*scrolling、fixed-top、fixed-bottom*/
+  }
+  .top{
+    color: red;
+    border:2px solid red;
+    --bullet-play-mode:top; /*scrolling、fixed-top、fixed-bottom*/
+  }
+  .bottom{
+    color: blue;
+    border:2px solid blue;
+    --bullet-play-mode:bottom; /*scrolling、fixed-top、fixed-bottom*/
+  }
+  
+</style>
+<main id="main">
+    <div class="scrolling">1 Lorem ipsum dolor sit amet </div>
+    <div class="scrolling">2et vim accumsan ponderum. Rebum deseruisse ex vix. <span>Vix stet honestatis definitionem an.</span></div>
+    <div class="scrolling">3Ius ei dicunt detracto elaboraret. Lorem ipsum dolor sit amet, </div>
+    <div class="scrolling">4consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix. </div>
+    <div class="top">5Vix stet honestatis definitionem an, </div>
+    <div class="scrolling">6et natum ocurreret cum, semper interpretaris cu mea. </div>
+    <div class="scrolling">7Eam saperet fierent luptatum no. Ius ei dicunt detracto elaboraret.</div>
+    <div class="scrolling">8 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix. Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea. </div>
+    <div class="scrolling">9Eam saperet fierent luptatum no. Ius ei dicunt detracto elaboraret.</div>
+    <div class="scrolling">10 Lorem ipsum dolor sit amet.</div>
+    <div class="top">11 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. </div>
+    <div class="scrolling">12 Rebum deseruisse ex vix. Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea. Eam saperet fierent luptatum no. Ius ei dicunt detracto elaboraret.</div>
+    <div class="scrolling">13 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix. Vix stet honestatis definitionem an.</div>
+    <div class="scrolling">14 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix. Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea.</div>
+    <div class="bottom">15 Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea.</div>
+    <div class="scrolling">16 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix. Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea. Eam saperet fierent luptatum no. Ius ei dicunt detracto elaboraret.</div>
+    <div class="bottom">17 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix.</div>
+    <div class="scrolling">18 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix. Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea..</div>
+</main>
+<button onclick="addScroll()">Add Scroll</button>
+<button onclick="addTop()">Add Top</button>
+<button onclick="addBottom()">Add Bottom</button>
+
+<script>
+  if (location.protocol === 'http:' && location.hostname !== 'localhost')
+    location.protocol = 'https:';
+    document.querySelectorAll('div').forEach(elem => {
+    const t = elem.textContent;
+    // Cut out a random amount of text, but keep at least 10 characters
+    elem.textContent = t.slice(0, Math.floor(Math.random() * (t.length - 10) + 10));
+  })
+  if ('layoutWorklet' in CSS) {
+    CSS.layoutWorklet.addModule('./bullet.js');
+  } else {
+    document.body.innerHTML = 'You need support for <a href="https://drafts.css-houdini.org/css-layout-api/">CSS Layout API</a> to view this demo :(';
+  }
+
+  var $main = document.getElementById('main');
+  var index = 19;
+  var T = ' I am test massage.</div>';
+  var sT= '<div class="scrolling">scrolling:';
+  var tT= '<div class="top">Top:';
+  var bT= '<div class="bottom">Bootom:';
+  var randomT = Math.floor(Math.random()*1000+1).toString();
+  function addScroll() {
+    $main.insertAdjacentHTML('beforeend', sT + index + randomT + T)
+    index++
+  }
+  function addTop() {
+    $main.insertAdjacentHTML('beforeend', tT + index + randomT + T)
+    index++
+  }
+  function addBottom() {
+    $main.insertAdjacentHTML('beforeend', bT + index + randomT + T)
+    index++
+  }
+</script>
