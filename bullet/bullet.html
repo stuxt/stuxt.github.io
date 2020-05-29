@@ -1,84 +1,97 @@
 <!doctype html>
-<!--
-Copyright 2018 Google, Inc. All Rights Reserved.
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-    http://www.apache.org/licenses/LICENSE-2.0
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
--->
-
+<html>
+<head>
+<title>BulletChatting Demo</title>
 <style>
-@property --bullet-play-mode {
+  @property --bullet-play-mode {
     syntax: '*';
     inherits: false;
     initial-value: 'scroll';
   }
   main {
     display: layout(bullet);
+    background: url(./bg.jpg) no-repeat center;
+    background-size: cover;
     width: 800px;
     height: 500px;
     margin: 10px auto;
     border: 1px solid #000;
-    /*--padding: 10;
-    --columns: 3;*/
+    /*overflow: hidden;*/
     --bullet-direction: row;  /*可选值为row和column  只对滚动弹幕有效*/ 
   }
   div {
     font: 12px sans-serif;
     display: inline-block;
-    width: fit-content;
-    margin: 5px;
-    white-space: pre;
+    /*width: fit-content;*/
+    margin: 2px;
+    /*white-space: pre;*/
   }
-  div::first-letter {
+  /*div::first-letter {
     font-size: 200%;
+  }*/
+  p{
+    font: 14px sans-serif;
+    margin: 2px;
+    padding: 3px;
   }
   .scrolling {
-    color: black;
-    border:2px solid rgba(71, 4, 10, 1);
+    color: #ffffff;
+    border:1px solid yellow;
     --bullet-play-mode:scroll; /*scrolling、fixed-top、fixed-bottom*/
   }
-  .top{
+  .top {
     color: red;
-    border:2px solid red;
+    font-weight: bold;
+    border:1px solid red;
     --bullet-play-mode:top; /*scrolling、fixed-top、fixed-bottom*/
   }
-  .bottom{
-    color: blue;
-    border:2px solid blue;
+  .bottom {
+    color: #00ffe8;
+    border:1px solid #00ffe8;
     --bullet-play-mode:bottom; /*scrolling、fixed-top、fixed-bottom*/
   }
-  
+  #icon{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(./play.png) no-repeat;
+    background-size:50px; 
+    position: absolute;
+    left: 50%;
+    top: 250px;
+  }
 </style>
-<main id="main">
-    <div class="scrolling">1 Lorem ipsum dolor sit amet </div>
-    <div class="scrolling">2et vim accumsan ponderum. Rebum deseruisse ex vix. <span>Vix stet honestatis definitionem an.</span></div>
-    <div class="scrolling">3Ius ei dicunt detracto elaboraret. Lorem ipsum dolor sit amet, </div>
-    <div class="scrolling">4consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix. </div>
-    <div class="top">5Vix stet honestatis definitionem an, </div>
-    <div class="scrolling">6et natum ocurreret cum, semper interpretaris cu mea. </div>
-    <div class="scrolling">7Eam saperet fierent luptatum no. Ius ei dicunt detracto elaboraret.</div>
-    <div class="scrolling">8 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix. Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea. </div>
-    <div class="scrolling">9Eam saperet fierent luptatum no. Ius ei dicunt detracto elaboraret.</div>
-    <div class="scrolling">10 Lorem ipsum dolor sit amet.</div>
-    <div class="top">11 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. </div>
-    <div class="scrolling">12 Rebum deseruisse ex vix. Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea. Eam saperet fierent luptatum no. Ius ei dicunt detracto elaboraret.</div>
-    <div class="scrolling">13 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix. Vix stet honestatis definitionem an.</div>
-    <div class="scrolling">14 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix. Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea.</div>
-    <div class="bottom">15 Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea.</div>
-    <div class="scrolling">16 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix. Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea. Eam saperet fierent luptatum no. Ius ei dicunt detracto elaboraret.</div>
-    <div class="bottom">17 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix.</div>
-    <div class="scrolling">18 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix. Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea..</div>
+</head>
+<body>
+<p id="icon"></p>
+<main id="main" data-duration='4000'>
+    <p class="scrolling" data-duration='3000' data-delay='0'>1 Lorem ipsum dolor sit amet </p>
+    <p class="scrolling" data-duration='4000' data-delay='1000'>2et vim accumsan ponderum. Rebum deseruisse ex vix. </p>
+    <p class="scrolling" data-duration='5000' data-delay='2000'>3Ius ei dicunt detracto elaboraret.  </p>
+    <p class="scrolling" data-duration='4000' data-delay='3000'>4et vim accumsan ponderum. Rebum deseruisse ex vix. </p>
+    <!-- <p class="top" data-duration='3000' data-delay='0'>5Vix stet honestatis definitionem an</p> -->
+    <p class="scrolling" data-duration='4000' data-delay='3000'>6et natum ocurreret cum, semper interpretaris cu mea. </p>
+    <p class="scrolling" data-duration='4000' data-delay='6000'>7Eam saperet fierent luptatum no. Ius ei dicunt detracto elaboraret.</p>
+    <p class="scrolling" data-duration='4000' data-delay='7000'>8 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix. </p>
+    <p class="scrolling" data-duration='5000' data-delay='4000'>9Eam saperet fierent luptatum no. Ius ei dicunt detracto elaboraret.</p>
+    <p class="scrolling" data-duration='5000' data-delay='2000'>10 Lorem ipsum dolor sit amet.</p>
+    <!-- <p class="top" data-duration='2000' data-delay='0'>11 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. </p> -->
+    <p class="scrolling" data-duration='4000' data-delay='1000'>12 Eam saperet fierent luptatum no. Ius ei dicunt detracto elaboraret.</p>
+    <p class="scrolling" data-duration='4000' data-delay='8000'>13 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix.</p>
+    <p class="scrolling" data-duration='5000' data-delay='2000'>14 Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea.</p>
+    <!-- <p class="bottom" data-duration='4000' data-delay='0'>15 Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea.</p> -->
+    <p class="scrolling" data-duration='5000' data-delay='5000'>16semper interpretaris cu mea. Eam saperet fierent luptatum no. Ius ei dicunt detracto elaboraret.</p>
+    <!-- <p class="bottom" data-duration='3000' data-delay='100'>17 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix.</p> -->
+    <p class="scrolling" data-duration='4000' data-delay='1000'>18 Lorem ipsum dolor sit amet,et natum ocurreret cum, semper interpretaris cu mea..</p>
 </main>
-<button onclick="addScroll()">Add Scroll</button>
-<button onclick="addTop()">Add Top</button>
-<button onclick="addBottom()">Add Bottom</button>
+<p style="text-align:center;">
+  <button id="addScroll">Add Scroll</button>
+  <button id="addTop">Add Top</button>
+  <button id="addBottom">Add Bottom</button>
 
+  <!-- <button id="toggleState">tog status</button> -->
+</p>
+<script src="../anim-worklet.js"></script>
 <script>
   if (location.protocol === 'http:' && location.hostname !== 'localhost')
     location.protocol = 'https:';
@@ -94,22 +107,228 @@ limitations under the License.
   }
 
   var $main = document.getElementById('main');
-  var index = 19;
-  var T = ' I am test massage.</div>';
-  var sT= '<div class="scrolling">scrolling:';
-  var tT= '<div class="top">Top:';
-  var bT= '<div class="bottom">Bootom:';
-  var randomT = Math.floor(Math.random()*1000+1).toString();
-  function addScroll() {
-    $main.insertAdjacentHTML('beforeend', sT + index + randomT + T)
-    index++
+  let isStart = false;
+  $main.onclick = function (){
+    if (!isStart) {
+      isStart = true;
+      startAnimation()
+      document.getElementById('icon').style.display = 'none'
+    }
   }
-  function addTop() {
-    $main.insertAdjacentHTML('beforeend', tT + index + randomT + T)
-    index++
-  }
-  function addBottom() {
-    $main.insertAdjacentHTML('beforeend', bT + index + randomT + T)
-    index++
-  }
+  var indexT = 19;
+  let bulletTexts = ['5Vix stet honestatis definitionem an', '11 Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum.', 'Vix stet honestatis definitionem an, et natum ocurreret cum, semper interpretaris cu mea.', 'Lorem ipsum dolor sit amet, consul disputando ne his, et vim accumsan ponderum. Rebum deseruisse ex vix.']
+function startAnimation () {
+  window.animationWorkletPolyfill.load().then(_=> {
+    let index = 0;
+
+    const $main = document.getElementById('main');
+    const defaultDuration = parseInt($main.dataset.duration) || 4000;
+    const bulletList = $main.getElementsByTagName('p')
+    // const toggleStateBtn = document.getElementById('toggleState');
+    let  bs = 'running';
+
+    const addScroll = document.getElementById('addScroll');
+    const addTop = document.getElementById('addTop');
+    const addBottom = document.getElementById('addBottom');
+
+    window.bulletAnimations = [];
+
+    CSS.animationWorklet.addModule('bullet-animator.js').then(function() {
+      // springCountEl.addEventListener('input', createAnimations);
+      console.log('bulletList:', bulletList)
+
+      // toggleStateBtn.addEventListener('click', switchState)
+      createAnimations();
+      setEvent();
+      addTopAndBottom()
+      
+    });
+
+    function addTopAndBottom () {
+      let it = 0;
+      let bt = 0;
+      let t = setInterval(() => {
+        appendElement($main, 'top')
+        it++;
+        if(it === 5) {
+          clearInterval(t);
+        }
+      }, 2000)
+
+      let b = setInterval(() => {
+        appendElement($main, 'bottom')
+        bt++;
+        if(bt === 4) {
+          clearInterval(b);
+        } 
+      }, 3000)
+      
+    }
+
+    function setEvent() {
+      addScroll.addEventListener('click', () => {
+        appendElement($main, 'scrolling')
+      })
+      addTop.addEventListener('click',  () => {
+        appendElement($main, 'top')
+      })
+      addBottom.addEventListener('click', () => {
+        appendElement($main, 'bottom')
+      })
+    }
+    function switchState() { 
+      window.bulletAnimations.forEach((animation) => {
+        console.log("bs:", bs)
+        bs === 'running' ? animation.animation.pause()  : animation.animation.play()
+      });
+      bs = bs === 'running' ? 'pause' : 'running'
+    }
+
+    function createAnimations() {
+      // Clear container and cancel existing animations.
+      window.bulletAnimations.forEach((animation) => { animation.animation.cancel() });
+      window.bulletAnimations = [];
+
+      const count = bulletList.length;
+      for (let i = 0; i < count; i++) {
+        const bulletItem = bulletList[i]
+        const iDuration = parseInt(bulletItem.dataset.duration) || 4500;
+        const iWidth = bulletItem.clientWidth + 900;
+        const iType = bulletItem.className || 'scrolling';
+        const iDelay = parseInt(bulletItem.dataset.delay) || 0;
+        
+        // const effect = new KeyframeEffect(
+        //   bulletItem,
+        //   {transform: ['translateX(800px)', 'translateX(-'+iWidth+'px)']},
+        //   {duration: 1000, delay: 0}
+        // );
+        const options = {
+          duration: iDuration,
+          delay: iDelay
+        };
+
+        let param = {
+          bulletItem,
+          options,
+          iType,
+          iDuration,
+          iWidth,
+          iDelay
+        }
+
+
+        // const target = appendSpringElement(springContainerEl, options);
+        const animation = createAnimation(param) // new WorkletAnimation('bullet', effect, document.timeline, options); // createAnimation(target, options);
+
+        window.bulletAnimations.push({
+          index: index,
+          animation
+        });
+        // console.log('animation', bulletAnimations)
+        
+
+        (function(j) {
+            setTimeout(()=>{
+              animation.play();
+              setTimeout(()=>{
+                animation.cancel()
+                window.bulletAnimations.forEach((animation, k) => { 
+                  // console.log(k, '---', animation)
+                  if (animation.index === j) {
+                    window.bulletAnimations.splice(k, 1)
+                    // console.log('---', bulletAnimations)
+                  }
+                });
+                bulletItem.remove()
+              },iDuration+iDelay)
+            },iDelay);
+        })(index);
+        // animation.onfinish = function(e) {
+        //   console.log('finish', e)
+        //   bulletItem.remove()
+        // }
+        
+        index++;
+        // animationB.pause();
+      }
+    }
+
+    function createAnimation(item) {
+      let  effect = null
+        // console.log('iType:', iType)
+        if(item.iType === 'scrolling' ) {
+          effect = new KeyframeEffect(
+            item.bulletItem,
+            {transform: ['translateX(0px)', 'translateX(-'+item.iWidth+'px)']},
+            {duration: item.iDuration, delay: item.iDelay || 0}
+          );
+        } else {
+          effect = new KeyframeEffect(
+            item.bulletItem,
+            {opacity: [1, 1]},
+            {duration: item.iDuration, delay: 0}
+          );
+        }
+
+      return  new WorkletAnimation('bullet', effect, document.timeline, item.options);
+    }
+
+
+    function appendElement(containerEl, type) {
+      const target = document.createElement('p');
+      let texts = bulletTexts[parseInt(Math.random() * bulletTexts.length)]
+      target.textContent = `${type}:${indexT},${texts}.`;
+      target.dataset.duration = '5000'
+      target.dataset.delay = '100'
+      target.classList.add(type);
+
+      containerEl.appendChild(target);
+
+      const iDuration = parseInt(target.dataset.duration) || 4500;
+      const iDelay = parseInt(target.dataset.delay) || 1000;
+      const iWidth = target.clientWidth + 900;
+      const options = {
+        duration: iDuration,
+        delay: iDelay
+      };
+      let param = {
+          bulletItem: target,
+          options,
+          iType: type,
+          iDuration,
+          iWidth,
+          iDelay
+      }
+      const animation = createAnimation(param);
+      window.bulletAnimations.push({
+          index: index,
+          animation
+        });
+      // window.bulletAnimations.push(animation);
+      // console.log('animation', bulletAnimations)
+      (function(j) {
+        setTimeout(()=>{
+          animation.play();
+          setTimeout(()=>{
+            animation.cancel()
+            window.bulletAnimations.forEach((animation, k) => {
+              // console.log(k, '---', animation)
+              if (animation.index === j) {
+                window.bulletAnimations.splice(k, 1)
+                // console.log('---', bulletAnimations)
+              }
+            });
+            target.remove()
+          },iDuration + iDelay)
+        },iDelay);
+      })(index);
+
+      index++;
+      indexT++;
+    }
+});
+  
+}
 </script>
+</body>
+</html>
